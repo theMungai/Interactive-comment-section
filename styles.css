@@ -54,11 +54,16 @@ body{
     color: var(--moderate-blue);
 }
 
+.js-minus-vote,
+.js-plus-vote{
+    cursor: pointer;
+    border: none;
+}    
+
 .plus-icon,
 .minus-icon{
     width: 12px;
     margin: 0px auto;
-    cursor: pointer;
     color: var(--light-grayish-blue);
 }
 
