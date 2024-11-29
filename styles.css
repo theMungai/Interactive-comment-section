@@ -16,21 +16,159 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Rubik";
+    /* outline: 2px solid red; */
 }
 
 
+body{
+    width: 100%;
+    background-color: var(--white);    
+    height: 100vh;
+}
+
+.main-container{
+    width: 50%;
+    margin: 40px auto;
+    padding:20px ;
+}
+
+.comment-container{
+    padding: 10px;
+    display: flex;
+    column-gap: 1rem;
+}
+
+.voting-container{
+    padding: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
 
 
+.voting-container p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--moderate-blue);
+}
+
+.plus-icon,
+.minus-icon{
+    width: 12px;
+    margin: 0px auto;
+    cursor: pointer;
+    color: var(--light-grayish-blue);
+}
+
+.plus-icon:hover,
+.minus-icon:hover{
+    color: var(--moderate-blue);
+}
 
 
+.comment-section{
+    width: 100%;
+}
+
+.comment-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-profile{
+    display: flex;
+    align-items: center;
+    column-gap: 1.3rem;
+}
+
+.user-profile img{
+    width: 30px;
+}
+
+.user-profile .user-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+
+.user-profile .period {
+    color: var(--grayish-blue);
+}
+
+.open-reply button{
+    border: none;
+    color: var(--moderate-blue);
+    font-weight: 500;
+    font-size:  1rem;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+}
+
+.open-reply button:hover{
+    color: var(--light-grayish-blue);
+}
 
 
+.comment-area{
+    width: 100%;
+}
 
+.comment-message{
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    color: var(--grayish-blue);
+    padding: 10px 5px;
+    line-height: 1.7rem;
+    font-size: 1rem;
+}
 
+.replying-container{
+    display: none;
+}
 
+.replying-field{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 1rem;
+    
+}
 
+.replying-field img {
+    width: 36px;
+}
 
+.replying-field .first-reply{
+    width: 80%;
+    min-height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    resize: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: var(--dark-blue);
+}
 
+.replying-field .reply-button {
+    background-color: var(--moderate-blue);
+    padding: 12px 20px;
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.replying-field .reply-button:hover{
+    background-color: var(--light-grayish-blue);
+}
 
 
 
