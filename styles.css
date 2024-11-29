@@ -132,30 +132,54 @@ body{
     display: none;
 }
 
-.replying-field{
+.replying-field,
+.add-comment{
     display: flex;
     align-items: flex-start;
     column-gap: 1rem;
     
 }
 
-.replying-field img {
+.replying-field img,
+.add-comment img {
     width: 36px;
 }
 
-.replying-field .first-reply{
+.replying-field .first-reply,
+.add-comment .start-comment{
     width: 80%;
     min-height: 100px;
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    resize: none;
     padding: 10px 20px;
     font-size: 1rem;
     color: var(--dark-blue);
+    caret-color: var(--moderate-blue);
+    border-color: var(--moderate-blue);
+    border-radius: 10px;  
+    overflow: hidden;
+    cursor: pointer;
+    resize: none;
 }
 
-.replying-field .reply-button {
+.add-comment{
+    margin-top: 50px;
+}
+
+.add-comment .start-comment{
+    border: none;
+}
+
+.add-comment .start-comment:focus{
+    outline: none;
+    border: 1px solid var(--moderate-blue);
+}
+
+.replying-field .first-reply:focus{
+    outline: none;
+    border: 1px solid var(--moderate-blue);
+}
+
+.replying-field .reply-button,
+.add-comment .send-button {
     background-color: var(--moderate-blue);
     padding: 12px 20px;
     color: var(--white);
@@ -166,9 +190,11 @@ body{
     cursor: pointer;
 }
 
-.replying-field .reply-button:hover{
+.replying-field .reply-button:hover,
+.add-comment .send-button:hover {
     background-color: var(--light-grayish-blue);
 }
+
 
 
 
